@@ -1,0 +1,254 @@
+body{
+    background-color: white;
+    font-family: cairo;
+    font-size: x-large;
+    
+}
+
+
+@keyframes show_up {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+    
+}
+@keyframes Move_up {
+    from {transform: translateY(500px);}
+    to {transform: translateY(0);}
+    
+}
+@keyframes show_left {
+    from {opacity: 0; transform: translateX(50px);}
+    to {opacity: 1; transform: translateX(0);}
+    
+}
+@keyframes show_right {
+    from {opacity: 0; transform: translateX(-50px);}
+    to {opacity: 1; transform: translateX(0);}
+    
+}
+
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px #ebebeb;
+    height: 100px;
+
+}
+.Profile{
+    transition: all .5s;
+    width: 50px;
+}
+.Profile:hover{
+    transition: all .5s;
+    width: 50px;
+    rotate: -360deg;
+}
+.pages{
+    display: flex;
+    justify-content: space-between;
+}
+.Our_Games{
+    transition: all .25s;
+    padding-right: 50px;
+
+}
+.Our_Games:hover{
+    transition: all .25s;
+    font-size: xx-large;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Introducing{
+    transition: all .25s;
+    background-color: #C0F1FF;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.Introducing:hover{
+    transition: all .25s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.Welcome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_image{
+    animation: show_right 1s ease-in-out;
+    background-color: black;
+    padding: 100px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.Welcome_text{
+    
+}
+.Welcome_Button{
+    display: flex;
+    direction: rtl;
+    padding-top: 50px;
+    padding-right: 50px;
+    
+}
+
+.team{
+    animation: show_up 1s ease-in-out;
+    transition: all .5s;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 0px 50px;
+    margin: 0 50px;
+}
+.team:hover {
+  background-color: #C0F1FF;
+}
+.our_works{
+    animation: show_up .7s ease-in-out;
+    transition: all .5s;
+    background-color: white;
+
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 0px 50px;
+}
+.our_works:hover{
+    transition: all .5s;
+    background-color: #C0F1FF;
+
+
+}
+
+.studio_member{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.Studio_info{
+    animation: show_up 1s ease-in-out;
+    direction: rtl;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.who_are_we{
+    direction: rtl;
+    box-shadow: 0 10px 100px #ebebeb;
+    margin: 50px;
+    padding: 50px;
+    border-radius:50px ;
+}
+
+.info1{
+    opacity: 0;
+}
+.info1.active{
+    animation: show_left 1s ease;
+    opacity: 1;
+
+}
+.info2{
+    opacity: 0;
+}
+.info2.active{
+    animation: show_up 1s ease;
+    opacity: 1;
+
+}
+.Leader{
+    animation: show_up 1.5s ease;
+    margin-top: 20px;
+    font-size: large;
+    color: gray;
+}
+
+.games_showcase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 10px 100px #d8d8d8;
+    border-radius: 50px;
+}
+.game_card{
+    opacity: 0;
+    margin: 50px;
+}
+.game_card.active{
+    animation: show_up 1s ease-in-out;
+    opacity: 1;
+    margin: 50px;
+}
+.card{
+    transition: all .25s ease-in-out;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px ;
+}
+.card:hover{
+    transition: all .25s ease-in-out;
+    width: 500px;
+    height: 400px;
+}
+
+.discraption{
+    box-shadow: 0 10px 10px #d8d8d8;
+
+    background-color: #C0F1FF;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.instructions{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C0F1FF;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px;
+}
+.instructions.active{
+    animation: show_left 1s ease-in-out;
+    opacity: 1;
+
+}
+.inst{
+    background-color: #00C8FF;
+    padding: 25px 75px 25px 75px;
+    border-radius: 25px;
+}
+
+.team_work{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0F1FF;
+    border-radius: 50px;
+    margin: 50px;
+    padding: 50px;
+}
+.team_work.active{
+    animation: show_right 1s ease-in-out;
+    opacity: 1;
+}
