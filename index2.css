@@ -1,0 +1,28 @@
+
+
+
+
+.g{
+    transition: .25s ease-in-out;
+    width: 200px;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+.g:hover{
+    transition: .25s ease-in-out;
+    width: 300px;
+
+}
+
+.e{
+    transition: .25s ease-in-out;
+    width: 200px;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+.e:hover{
+    transition: .25s ease-in-out;
+    width: 300px;
+
+}

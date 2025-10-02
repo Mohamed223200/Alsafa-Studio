@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh; /* ارتفاع الشاشة بالكامل */
+    display: flex;
+    justify-content: center; /* أفقياً */
+    align-items: center;     /* رأسياً */
+    font-family: cairo;
+}
+a{
+     text-decoration: none;
+}
+@keyframes show_up {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+    
+}
+@keyframes show_upp {
+    from {opacity: 1; transform: translateY(0px);}
+    to {opacity: 0; transform: translateY(-20px);}
+    
+}
+.shape {
+    animation: show_up 1s ease-in-out;
+    width: 100vh;
+    height: 90vh;
+    background: #C0F1FF;
+    box-shadow: 0 80px 100px #93c1ce;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.shape.animate{
+    animation: show_upp .25s ease-in-out;
+    opacity: 0;
+
+}
+.shape2 {
+    opacity: 0;
+    width: 100vh;
+    height: 90vh;
+    background: #C0F1FF;
+    box-shadow: 0 80px 100px #93c1ce;
+    border-radius: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    direction: unset;
+}
+.shape2.animate{
+    animation: show_up .25s ease-in-out;
+    opacity: 1;
+}
+.shape2.active{
+    animation: show_upp .25s ease-in-out;
+    opacity: 0;
+
+}
+.shape3 {
+    animation: show_up 1s ease-in-out;
+    width: 100vh;
+    height: 90vh;
+    background: #C0F1FF;
+    box-shadow: 0 80px 100px #93c1ce;
+    border-radius: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+}
+.shape3.animate{
+    animation: show_up .25s ease-in-out;
+    opacity: 1;
+
+}
+.shape3.active{
+    animation: show_upp .25s ease-in-out;
+    opacity: 0;
+
+}
+.end {
+    animation: show_up 1s ease-in-out;
+    width: 100vh;
+    height: 90vh;
+    background: #C0F1FF;
+    box-shadow: 0 80px 100px #93c1ce;
+    border-radius: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    flex-direction: column;
+}
+.end.animate{
+    animation: show_up .25s ease-in-out;
+    opacity: 1;
+
+}
+.end.active{
+    animation: show_upp .25s ease-in-out;
+    opacity: 0;
+
+}

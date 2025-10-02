@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cairo;
+    font-size: 20px;
+}
+@keyframes show_left {
+    from {opacity: 0; transform: translateX(50px);}
+    to {opacity: 1; transform: translateX(0);}
+    
+}
+@keyframes show_right {
+    from {opacity: 0; transform: translateX(-50px);}
+    to {opacity: 1; transform: translateX(0);}
+    
+}
+a{
+     text-decoration: none;
+     color: black;
+}
+.page{
+    animation: show_left .5s ease-in-out;
+    width: 50vh;
+    transition: .25s ease-in-out;
+    background-color:white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+.page:hover{
+    transition: .25s ease-in-out;
+    background-color: aqua;
+}
